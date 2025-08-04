@@ -109,7 +109,16 @@ export function Terminal() {
                     <span className="h-4 w-4 rounded-full bg-yellow-500"></span>
                     <span className="h-4 w-4 rounded-full bg-green-500"></span>
                 </div>
-                <p className="text-center flex-grow text-sm text-muted-foreground">CLI Portfolio</p>
+                <pre className="text-center flex-grow text-sm text-muted-foreground">
+{`
+        _                         _                       _    __       _ _        
+   __ _| |__  _ __ ___   __ _  __| |     _ __   ___  _ __| |_ / _| ___ | (_) ___   
+  / _` | '_ \\| '_ \` _ \\ / _` |/ _` |    | '_ \\ / _ \\| '__| __| |_ / _ \\| | |/ _ \\  
+ | (_| | | | | | | | | | (_| | (_| |    | |_) | (_) | |  | |_|  _| (_) | | | (_) | 
+  \\__,_|_| |_|_| |_| |_|\\__,_|\\__,_|____| .__/ \\___/|_|   \\__|_|  \\___/|_|_|\\___(_)
+                                  |_____|_|
+`}
+                </pre>
             </div>
             <div className="p-4 overflow-y-auto h-[calc(90vh-52px)]" >
                 <div className="flex flex-col gap-4">
