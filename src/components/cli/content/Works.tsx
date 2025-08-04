@@ -10,7 +10,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const projects = [
     {
@@ -77,7 +77,10 @@ export function Works() {
  <img src={image} alt={`${p.title} - Image ${index + 1}`} className="rounded-md object-cover w-full h-auto cursor-pointer" />
  </DialogTrigger>
  <DialogContent className="max-w-screen-md">
- <img src={image} alt={`${p.title} - Image ${index + 1}`} className="object-contain w-full h-full" />
+    <DialogHeader>
+        <DialogTitle>{p.title} - Image {index + 1}</DialogTitle>
+    </DialogHeader>
+    <img src={image} alt={`${p.title} - Image ${index + 1}`} className="object-contain w-full h-full" />
  </DialogContent>
  </Dialog>
  </CarouselItem>
