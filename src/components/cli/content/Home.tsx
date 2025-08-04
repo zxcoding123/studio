@@ -1,7 +1,8 @@
 export function Home() {
     return (
         <div>
-            <pre className="text-primary whitespace-pre-wrap text-xs sm:text-base">
+           <pre className="text-primary whitespace-pre-wrap text-[0.55rem] sm:text-xs md:text-base">
+
 {`
         _                         _                       _    __       _ _        
    __ _| |__  _ __ ___   __ _  __| |     _ __   ___  _ __| |_ / _| ___ | (_) ___   
