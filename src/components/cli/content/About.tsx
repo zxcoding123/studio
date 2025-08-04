@@ -6,8 +6,9 @@ export function About() {
             <br/>
             <h3 className="text-lg font-bold text-accent mb-2">Skills</h3>
             <ul className="list-disc list-inside space-y-1">
-                <li><span className="font-bold text-primary">Languages:</span> TypeScript, JavaScript, Python, HTML, CSS</li>
-                <li><span className="font-bold text-primary">Frameworks:</span> Next.js, React, Tailwind CSS, Node.js</li>
+                <li><span className="font-bold text-primary">Languages:</span> HTML, CSS, JavaScript, jQuery, Python, TypeScript, Flutter, PHP</li>
+                <li><span className="font-bold text-primary">Databases:</span> MySQL, SQLite, Firebase, PHP:PDO </li>
+                <li><span className="font-bold text-primary">Frameworks:</span> Vite, Next.js, React, Bootstrap CSS, Tailwind CSS, Node.js</li>
                 <li><span className="font-bold text-primary">Tools:</span> Git, Docker, Firebase, Vercel, Figma</li>
             </ul>
         </div>
