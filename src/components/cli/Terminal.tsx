@@ -100,7 +100,7 @@ export function Terminal() {
 
     return (
         <div 
-            className="w-full h-[90vh] max-w-5xl bg-background rounded-lg border-2 border-primary shadow-2xl backdrop-blur-sm font-code text-base"
+            className="w-full h-[90vh] max-w-5xl bg-background rounded-lg border-2 border-border shadow-2xl backdrop-blur-sm font-code text-base"
             onClick={() => inputRef.current?.focus()}
         >
             <div className="bg-secondary p-3 flex items-center gap-2 border-b-2 border-primary rounded-t-md">

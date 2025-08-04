@@ -8,7 +8,7 @@ export function NotFound({ command }: NotFoundProps) {
             <p>
                 <span className="text-destructive">command not found:</span> {command}
             </p>
-            <p>Type '<span className="text-accent">help</span>' to see the list of available commands.</p>
+            <p>Type '<span className="text-accent-foreground bg-accent px-1 rounded">help</span>' to see the list of available commands.</p>
         </div>
     );
 }
