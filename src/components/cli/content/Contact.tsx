@@ -9,14 +9,14 @@ const contacts = [
 export function Contact() {
     return (
         <div>
-            <h2 className="text-xl font-bold text-accent mb-4">Contact Me</h2>
+            <h2 className="text-xl font-bold text-blue-500 mb-4">Contact Me</h2>
             <p>You can reach me through the following channels:</p>
             <ul className="mt-2 space-y-2">
                 {contacts.map(contact => (
                     <li key={contact.label} className="flex items-center gap-4">
                         <contact.icon className="text-primary" size={20} />
                         <span className="w-20">{contact.label}:</span>
-                        <a href={contact.href} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-accent hover:underline transition-colors">
+                        <a href={contact.href} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-blue-500 hover:underline transition-colors">
                             {contact.value}
                         </a>
                     </li>

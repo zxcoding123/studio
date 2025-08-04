@@ -40,7 +40,7 @@ export function Terminal() {
         const newEntry = (
             <div key={history.length}>
                 <div className="flex items-center gap-2">
-                    <p><span className="text-accent">user@cli-portfolio</span>:<span className="text-primary">~</span>$</p>
+                    <p><span className="text-primary font-bold">user@cli-portfolio</span>:<span className="text-blue-500">~</span>$</p>
                     <p className="flex-1">{commandStr}</p>
                 </div>
                 <div className="leading-relaxed mt-1">{commandOutput}</div>
@@ -57,7 +57,7 @@ export function Terminal() {
                 processCommand(currentInput);
                 setCommandHistory(prev => [currentInput, ...prev].slice(0, 50));
             } else {
-                 setHistory(prev => [...prev, <div key={prev.length}><p><span className="text-accent">user@cli-portfolio</span>:<span className="text-primary">~</span>$</p></div>]);
+                 setHistory(prev => [...prev, <div key={prev.length}><p><span className="text-primary font-bold">user@cli-portfolio</span>:<span className="text-blue-500">~</span>$</p></div>]);
             }
             setInput('');
             setHistoryIndex(-1);
@@ -100,10 +100,10 @@ export function Terminal() {
 
     return (
         <div 
-            className="w-full h-[90vh] max-w-5xl bg-black/70 rounded-lg border-2 border-primary/20 shadow-2xl shadow-primary/10 backdrop-blur-sm font-code text-base"
+            className="w-full h-[90vh] max-w-5xl bg-white/70 rounded-lg border-2 border-border shadow-2xl shadow-gray-200/10 backdrop-blur-sm font-code text-base"
             onClick={() => inputRef.current?.focus()}
         >
-            <div className="bg-background/80 p-3 flex items-center gap-2 border-b-2 border-primary/20 rounded-t-md">
+            <div className="bg-gray-100 p-3 flex items-center gap-2 border-b-2 border-border rounded-t-md">
                 <div className="flex gap-2">
                     <span className="h-4 w-4 rounded-full bg-red-500"></span>
                     <span className="h-4 w-4 rounded-full bg-yellow-500"></span>
@@ -116,7 +116,7 @@ export function Terminal() {
                     {history}
                 </div>
                 <div className="flex items-center gap-2 mt-4">
-                    <p><span className="text-accent">user@cli-portfolio</span>:<span className="text-primary">~</span>$</p>
+                    <p><span className="text-primary font-bold">user@cli-portfolio</span>:<span className="text-blue-500">~</span>$</p>
                     <div className="relative flex-1">
                         <input
                             ref={inputRef}
@@ -130,7 +130,7 @@ export function Terminal() {
                             spellCheck="false"
                         />
                          <span className="absolute left-0 top-0 pointer-events-none" style={{width: `${input.length}ch`}}></span>
-                         <span className="bg-primary h-[1.2em] w-[0.5em] inline-block -mb-1 animate-blink absolute" style={{ left: `${input.length}ch`}}></span>
+                         <span className="bg-foreground h-[1.2em] w-[0.5em] inline-block -mb-1 animate-blink absolute" style={{ left: `${input.length}ch`}}></span>
                     </div>
                 </div>
                 <div ref={scrollRef} />

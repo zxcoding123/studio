@@ -10,7 +10,7 @@ export function Home() {
 `}
             </pre>
             <p>Welcome to my interactive CLI portfolio.</p>
-            <p className="mt-2">Type '<span className="text-accent">help</span>' to see the list of available commands.</p>
+            <p className="mt-2">Type '<span className="text-blue-500">help</span>' to see the list of available commands.</p>
         </div>
     );
 }

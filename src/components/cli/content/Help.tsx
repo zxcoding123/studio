@@ -17,7 +17,7 @@ export function Help() {
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1">
                 {commands.map(({ cmd, desc }) => (
                     <li key={cmd} className="flex items-baseline gap-2">
-                        <span className="w-24 text-accent">{cmd}</span>
+                        <span className="w-24 text-blue-500">{cmd}</span>
                         <span className="flex-1">{desc}</span>
                     </li>
                 ))}

@@ -34,10 +34,10 @@ const projects = [
 export function Works() {
     return (
         <div>
-            <h2 className="text-xl font-bold text-accent mb-4">My Works</h2>
+            <h2 className="text-xl font-bold text-blue-500 mb-4">My Works</h2>
             <div className="space-y-6">
                 {projects.map(p => (
-                    <div key={p.title} className="flex flex-col md:flex-row gap-4 border border-primary/20 p-4 rounded-md bg-secondary/20">
+                    <div key={p.title} className="flex flex-col md:flex-row gap-4 border border-border p-4 rounded-md bg-secondary">
                         <div className="w-full md:w-1/3">
                              <Image src={p.image} alt={p.title} width={400} height={250} className="rounded-md object-cover w-full h-auto" data-ai-hint={p.aiHint} />
                         </div>
@@ -48,8 +48,8 @@ export function Works() {
                                 {p.tags.map(tag => <span key={tag} className="text-xs bg-background/50 px-2 py-1 rounded">{tag}</span>)}
                             </div>
                             <div className="flex gap-4 text-sm">
-                                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-accent transition-colors"><Github size={16} /> Repository</a>
-                                <a href={p.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-accent transition-colors"><LinkIcon size={16} /> Live Demo</a>
+                                <a href={p.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-blue-500 transition-colors"><Github size={16} /> Repository</a>
+                                <a href={p.live} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-blue-500 transition-colors"><LinkIcon size={16} /> Live Demo</a>
                             </div>
                         </div>
                     </div>
