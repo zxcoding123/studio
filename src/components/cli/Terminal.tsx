@@ -100,7 +100,7 @@ export function Terminal() {
 
     return (
         <div 
-            className="w-full h-[90vh] max-w-5xl bg-white/70 rounded-lg border-2 border-border shadow-2xl shadow-gray-200/10 backdrop-blur-sm font-code text-base"
+            className="w-full h-[90vh] max-w-5xl bg-background rounded-lg border-2 border-border shadow-2xl backdrop-blur-sm font-code text-base"
             onClick={() => inputRef.current?.focus()}
         >
             <div className="bg-gray-100 p-3 flex items-center gap-2 border-b-2 border-border rounded-t-md">
@@ -113,7 +113,7 @@ export function Terminal() {
 {`
         _                         _                       _    __       _ _        
    __ _| |__  _ __ ___   __ _  __| |     _ __   ___  _ __| |_ / _| ___ | (_) ___   
-  / _` | '_ \\| '_ \` _ \\ / _` |/ _` |    | '_ \\ / _ \\| '__| __| |_ / _ \\| | |/ _ \\  
+  / _\` | '_ \\| '_ \` _ \\ / _` |/ _\` |    | '_ \\ / _ \\| '__| __| |_ / _ \\| | |/ _ \\  
  | (_| | | | | | | | | | (_| | (_| |    | |_) | (_) | |  | |_|  _| (_) | | | (_) | 
   \\__,_|_| |_|_| |_| |_|\\__,_|\\__,_|____| .__/ \\___/|_|   \\__|_|  \\___/|_|_|\\___(_)
                                   |_____|_|
